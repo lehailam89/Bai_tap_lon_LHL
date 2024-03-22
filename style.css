@@ -303,6 +303,19 @@
     background: #F96E6E;
     color: #fff;
 }
+.section-two .container .inner2-buy{
+    padding: 20px 0;
+}
+.section-two .icon-image{
+    display: none;
+}
+@media (max-width: 768px) {
+    .section-two .icon-image{
+        display: inline-block;
+        padding: 30px;
+        font-size: 20px;
+    }
+}
 /* End Section-two */
 
 /* Section-image */
@@ -316,6 +329,15 @@
     border: 1px solid #ddd;
     margin-right: 30px;
 }
+.section-image .icon-image{
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .section-image .row{
+        display: none;
+    }
+}
 /* End Section image */
 
 /* Section-three */
@@ -328,6 +350,7 @@
 .section-three .ss-three-total-content{
     display: flex;
     margin-left: 50px;
+    cursor: pointer;    
 }
 .section-three .ss-three-content{
     text-align: center; 
@@ -351,7 +374,6 @@
     width: 40%;
     height: 1px;
 }
-
 /* End-section-three */
 
 /* Section-four */

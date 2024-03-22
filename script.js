@@ -38,3 +38,17 @@ buttonAdd.onclick = function() {
 }
 
 //End section-two
+
+// Section-three
+function changeBackground(element) {
+  const allContents = document.querySelectorAll('.ss-three-content');
+  allContents.forEach(content => {
+    if (content !== element) {
+      content.style.backgroundColor = '#EDD19B';
+      content.style.color = '#fff';
+    }
+  });
+  element.style.backgroundColor = '#D0931B';
+  element.style.color = '#fff';
+}
+// End Section-three
