@@ -15,10 +15,18 @@ function scrollFunction() {
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  // For modern browsers
+  if (window.scrollTo) {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  } else { // For Safari
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
 }
-// End BackTop
+// End Backtop
 
 const add = document.querySelector('.inner-buy-icon2-icon');
 add.addEventListener('click', function() {
