@@ -50,6 +50,38 @@
 .header .inner-main ul li{
     margin-right: 10px; 
 }
+@media (max-width: 675px){
+    .header .row .inner-main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header .row .inner-main ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+    }
+    .header .row .inner-main ul li {
+        margin: 0 5px;
+    }
+}
+@media (max-width: 390px){
+    .header .row .inner-main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header .row .inner-main ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+    }
+    .header .row .inner-main ul li {
+        margin: 0 5px;
+    }
+}
 
 /* End Header */
 
@@ -145,6 +177,65 @@
         font-size: 30px;    
     }
 }
+@media (max-width: 560px){
+    .section-one .col-12{
+        margin-bottom: -40px;
+    }
+    .section-one .row .inner-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .section-one .row .inner-main .inner-logo {
+        margin-bottom: 10px;
+    }
+    .section-one .row .inner-main .inner-list,
+    .section-one .row .inner-main .inner-search {
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .section-one .row .inner-main .inner-list ul li {
+        display: none; /* Ẩn các mục "Thông tin bán buôn", "Sản phẩm làm bánh" và "Làm bánh" */
+    }
+    .section-one .row .inner-main .inner-search ul li {
+        margin: 0 5px; /* Cân chỉnh khoảng cách giữa các mục */
+    }
+    .section-one .row .col-12 .inner-search li{
+        display: none;
+    }
+}
+@media (max-width: 390px) {
+    .section-one .col-12{
+        margin-bottom: -40px;
+    }
+    .section-one .row .inner-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .section-one .row .inner-main .inner-logo {
+        margin-bottom: 10px;
+    }
+    .section-one .row .inner-main .inner-list,
+    .section-one .row .inner-main .inner-search {
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .section-one .row .inner-main .inner-list ul li {
+        display: none; /* Ẩn các mục "Thông tin bán buôn", "Sản phẩm làm bánh" và "Làm bánh" */
+    }
+    .section-one .row .inner-main .inner-search ul li {
+        margin: 0 5px; /* Cân chỉnh khoảng cách giữa các mục */
+    }
+    .section-one .row .col-12 .inner-search li{
+        display: none;
+    }
+}
+
 /* End Section-one */
 
 /* Small Part One */
@@ -373,6 +464,35 @@
     width: 40%;
     height: 1px;
 }
+@media (max-width: 390px) {
+    .section-three {
+        display: flex;
+        flex-direction: column;
+    }
+    .ss-three-border {
+        display: none;
+    }
+    .ss-three-total-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* căn giữa các phần tử con */
+        width: 100%; /* Chiều rộng tối đa là 390px */
+    }
+    .ss-three-content-left,
+    .ss-three-content-right {
+        display: none; /* Ẩn đi phần tử .ss-three-content-left và .ss-three-content-right */
+    }
+    .ss-three-content {
+        text-align: center;
+        width: 90%; /* Giảm chiều rộng của .ss-three-content để phù hợp với màn hình nhỏ hơn */
+        margin-bottom: 10px;
+        cursor: pointer;
+        box-sizing: border-box; /* Tính cả padding và border vào chiều rộng */
+    }
+}
+
+
+
 /* End-section-three */
 
 /* Section-four */
